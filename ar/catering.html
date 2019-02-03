@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+	<meta charset="UTF-8">
+	<title>مطعم الوادي | الخدمات</title>
+	<link rel="stylesheet" type="text/css" href="catering.css">
+	<meta name="viewport" content="width=device-width,initial-scale=1.0">
+	<link href="https://use.fontawesome.com/releases/v5.0.8/css/all.css" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Cairo|Merriweather+Sans" rel="stylesheet"> 
+</head>
+<body>
+	<header class="header">
+  <span class="openSlide">
+   <a href="javascript:void(0);" onclick="openSlideMenu()">
+    <svg width="30" height="30">
+     <path d="M0,5 30,5" stroke="#FFFAF0" stroke-width="5"/>
+     <path d="M0,14 30,14" stroke="#FFFAF0" stroke-width="5"/>
+     <path d="M0,23 30,23" stroke="#FFFAF0" stroke-width="5"/>
+    </svg>
+   </a>
+  </span>
+  <div id="sideMenu" class="sideNav">
+   <a href="#" class="btnClose" onclick="closeSlideMenu()">&times;</a>
+   <a href="index.html">الرئيسية</a>
+   <a href="menu.html">القائمة </a>
+   <a href="catering.html">الخدمات</a>
+   <a href="index.html#reservation">الحجوزات</a>
+   <a href="#contactUs">اتصل بنا</a>
+  </div>
+  <h2 class="logo"><a href="index.html">الوادي</a></h2>
+  <nav class="nav">
+   <ul>
+    <li><a href="#contactUs">اتصل بنا</a></li>
+    <li><a href="catering.html">الخدمات</a></li>
+    <li><a href="index.html#reservation">الحجوزات</a></li>
+    <li><a href="menu.html">القائمة</a></li>
+
+   </ul>
+  </nav>
+  <div class="lang">
+   <a href="../index.html">English</a>
+  </div>
+ </header>
+		<div class="cateringHeader">
+			<h1>خدمات التموين</h1>
+		</div>
+			<div class="top">
+				<H1>كيف نستطيع مساعدتك؟</H1>
+				<p>نحن نقدم خدمات التموين إلى كل من الحكومة والقطاع الخاص في جميع أنحاء سان فرانسيسكو. نقوم بتنفيذ خدمات تشغيلية كاملة للمطابخ المركزية للعملاء ونوفر لهم أعضاء فريق متخصصين من المهارة ، بما في ذلك اختصاصيي التغذية ، ومراقبي الجودة ، والطهاة ، والمساعدين ، والنوادل. تتضمن قوائمنا المقدمة لعملائنا مجموعة واسعة من الأصناف الغذائية المصممة لتلبية أو تجاوز توقعات العملاء</p>
+
+			</div>
+			<div class="bottom">
+				<h1>استمارة التموين</h1>
+				<form class="form1">
+					<input id="field1" type="text" name="name" class="name" placeholder="الإسم" required>
+					<input id="field2" type="email" name="email" class="email" placeholder="الإيميل" required>
+					<textarea id="field3" placeholder="اكتب بالتفصيل عن الخدمة المطلوبة، التاريخ، المكان، عدد الأشخاص، إلخ..، " required></textarea>
+					<button class="bookButton" value="Book" type="submit" onclick="cateringAlert()">إرسل</button>	
+				</form>
+			</div>
+
+
+	<footer> 
+			<div class="footer" id="contactUs">
+					<div class="contact" >
+					 <h3>اتصل بنا</h3>
+					 <p>(212) 444 313 959</p>
+					 <p>hi@mohdhussein.net</p>
+					 
+					 <div class="icons-social">
+					 <a target="_blank" href="https://github.com/mohdhussein/alwadi"><i class="fab fa-github"></i></a>
+					 <a target="_blank" href="https://twitter.com/ItssMohammed"><i class="fab fa-twitter"></i></a>
+					 <a target="_blank" href="https://www.instagram.com/"><i class="fab fa-instagram"></i></a>
+						</div>
+				  
+				   
+					</div>
+					<div class="hours">
+					 <h3>ساعات العمل</h3>
+					 <p>الأحد إلى الخميس: 10-10</p>
+					 <p>الجمعة والسبت: 10-12</p>
+					 <p>مغلق في الأعياد</p>
+					</div>   
+					<div class="location">
+					 <h3>الموقع</h3>
+					 <p>7912 International Blvd</p>
+					 <p>Oakland, CA</p>
+					 <a target="_blank" href="https://www.google.com.my/maps/place/Masala+Cuisine/@37.7573274,-122.1853263,17z/data=!4m8!1m2!2m1!1sRestaurants!3m4!1s0x0:0x24bd6236c7e641ee!8m2!3d37.7570371!4d-122.1819102">إفتح في خرائط Google</a>
+				  
+					 </div>
+		</div>
+		<div class="subfooter">
+			<p>2019 ©</p>
+		</div>
+	</footer>
+
+
+
+
+	<script src="script.js"></script> 
+
+</body>
+</html>

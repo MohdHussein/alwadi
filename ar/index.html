@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+ <meta charset="UTF-8">
+ <title>مطعم الوادي | الرئيسية</title>
+ <link rel="stylesheet" type="text/css" href="style.css">
+ <meta name="viewport" content="width=device-width,initial-scale=1.0">
+ <link href="https://fonts.googleapis.com/css?family=Cairo|Merriweather+Sans" rel="stylesheet"> 
+ <link href="https://use.fontawesome.com/releases/v5.0.8/css/all.css" rel="stylesheet">
+ <link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+ <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+ <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+
+</head>
+<body>
+ <header class="header">
+  <span class="openSlide">
+   <a href="javascript:void(0);" onclick="openSlideMenu()">
+    <svg width="30" height="30">
+     <path d="M0,5 30,5" stroke="#FFFAF0" stroke-width="5"/>
+     <path d="M0,14 30,14" stroke="#FFFAF0" stroke-width="5"/>
+     <path d="M0,23 30,23" stroke="#FFFAF0" stroke-width="5"/>
+    </svg>
+   </a>
+  </span>
+  <div id="sideMenu" class="sideNav">
+   <a href="#" class="btnClose" onclick="closeSlideMenu()">&times;</a>
+   <a href="index.html">الرئيسية</a>
+   <a href="menu.html">القائمة </a>
+   <a href="catering.html">الخدمات</a>
+   <a onclick="smoothScroll(document.getElementById('reservation'))">الحجوزات</a>
+   <a onclick="smoothScroll(document.getElementById('contactUs'))">اتصل بنا</a>
+  </div>
+  <h2 class="logo"><a href="index.html">الوادي</a></h2>
+  <nav class="nav">
+   <ul>
+    <li><a href="#contactUs">اتصل بنا</a></li>
+    <li><a href="catering.html">الخدمات</a></li>
+    <li><a href="#reservation">الحجوزات</a></li>
+    <li><a href="menu.html">القائمة</a></li>
+
+   </ul>
+  </nav>
+  <div class="lang">
+   <a href="../index.html">English</a>
+  </div>
+ </header>
+ <div class="body">
+  <div class="welcome">
+   <h1>مطعم الوادي</h1>
+   <p>أجود انواع الأطباق اليمنية الشهية</p>
+  </div>
+  <div class="ourStory" id="aboutUs">
+   <div class="p1">
+    <div>
+     <h1>من نحن</h1>
+     <p>   الوادي هو مطعم يقدم مأكولات يمنية ويقع في مدينة سان فرانسيسكو. في عام 2009، فتحنا أبوابنا في واجهة محل صغيرة
+        وبأفكار كبيرة. لقد كان نجاحاً منذ البداية ولكنه سرعان ما أصبح أمرًا أكبر بكثير</p>
+    </div>
+   </div>
+   <div class="features">
+    <div>
+     <img src="../images/karaoke.png" style="margin-top: 4px;">
+     <p>استمتع بالموسيقى الكلاسيكية اليمنية أثناء وجودك معنا. واحضر واحدة من العروض الحية للمغنيين اليمنيين الموهوبين في نهاية كل أسبوع في الساعة 8 مساءً</p>
+    </div>
+  
+    <div>
+     <img src="../images/coffeecup.png">
+     <p>اليمن واحدة من أفضل الدول في إنتاج البن ولديها واحدة من أفضل أنواع القهوة في العالم. نعتقد أنها الأفضل ، جربها واحكم لنفسك</p>
+   </div>
+
+   <div>
+     <img src="../images/dish.png"> 
+     <p>إن طهي الطعام التقليدي هو فن خاص جداً ولأطباقنا اليمنية ، نستخدم التوابل الخاصة جداً ، وبعضها لا يمكن العثور عليها خارج اليمن</p>
+    </div>
+  </div>
+
+ </div>
+ <section class="reservation" id="reservation">
+  <div class="resHeader"><h1>الحجوزات</h1></div>
+
+  <div class="resContent">
+   <form class="form1">
+    <input id="field1" type="text" name="name" class="name" placeholder="الإسم" required>
+    <input id="field2" type="email" name="email" class="email" placeholder="الإيميل" required>
+    <script>
+     $( function() {
+      $("input.datePicker").datepicker({
+
+       minDate: 0
+      });
+     } );
+    </script>
+
+    <input type="text" class="datePicker" placeholder="التاريخ" required>
+
+    <select class="selectTime" required>
+     <option value="400">4:00 PM</option>
+     <option value="430">4:30 PM</option>
+     <option value="500">5:00 PM</option>
+     <option value="530">5:30 PM</option>     
+     <option value="600">6:00 PM</option>
+     <option value="630">6:30 PM</option>
+     <option value="700">7:00 PM</option>
+     <option value="730">7:30 PM</option>
+     <option value="800">8:00 PM</option>
+     <option value="830">8:30 PM</option>
+     <option value="900">9:00 PM</option>
+     <option value="930">9:30 PM</option>
+    </select>
+
+    <select class="selectPerson" required>
+     <option value="1">1 Person</option>
+     <option value="2">2 People</option>
+     <option value="3">3 People</option>
+     <option value="4">4 People</option>
+     <option value="5">5 People</option>
+     <option value="6">6 People</option>
+
+    </select>
+
+    <button class="bookButton" value="Book" type="submit" onclick="reservationAlert()">احجز</button> 
+   </div>
+  </form> 
+ </section>
+ <section class="instagram">
+  <h1>إنستاغرام</h1>
+
+  <div class="imgGallery">
+   <div><img src="../images/coffeebeans.jpg" alt="gallery image"></div>
+   <div><img src="../images/bintalsahn.png" alt="gallery image"></div>
+   <div><img src="../images/saltah.jpg" alt="gallery image"></div>
+   <div><img src="../images/mandi.png" alt="gallery image"></div>
+   <div><img src="../images/kebda.jpg" alt="gallery image"></div>
+   
+  </div>
+ </section>
+</div>
+<footer> 
+ <div class="footer" id="contactUs">
+  <div class="contact" >
+   <h3>اتصل بنا</h3>
+   <p>(212) 444 313 959</p>
+   <p>hi@mohdhussein.net</p>
+   
+   <div class="icons-social">
+   <a target="_blank" href="https://github.com/mohdhussein/alwadi"><i class="fab fa-github"></i></a>
+   <a target="_blank" href="https://twitter.com/ItssMohammed"><i class="fab fa-twitter"></i></a>
+   <a target="_blank" href="https://www.instagram.com/"><i class="fab fa-instagram"></i></a>
+      </div>
+
+ 
+  </div>
+  <div class="hours">
+   <h3>ساعات العمل</h3>
+   <p>الأحد إلى الخميس: 10-10</p>
+   <p>الجمعة والسبت: 10-12</p>
+   <p>مغلق في الأعياد</p>
+  </div>   
+  <div class="location">
+   <h3>الموقع</h3>
+   <p>7912 International Blvd</p>
+   <p>Oakland, CA</p>
+   <a target="_blank" href="https://www.google.com.my/maps/place/Masala+Cuisine/@37.7573274,-122.1853263,17z/data=!4m8!1m2!2m1!1sRestaurants!3m4!1s0x0:0x24bd6236c7e641ee!8m2!3d37.7570371!4d-122.1819102">إفتح في خرائط Google</a>
+
+   </div>
+  </div>
+  <div class="subfooter">
+   <p>2019 ©</p>
+  </div>
+ </footer>
+
+
+
+
+  <script src="script.js"></script> 
+
+
+</body>
+</html>

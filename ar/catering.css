@@ -1,0 +1,420 @@
+html {
+	position: relative;
+	min-height: 100%;
+	/* border-box box model allows us to add padding and border to our elements without increasing their size */
+	box-sizing: border-box;
+    font-family: 'Cairo', sans-serif;
+    font-family: 'Merriweather Sans', sans-serif;
+    width: 100%;
+    margin: 0px;
+    padding: 0px;
+    overflow-x: hidden; 
+    scroll-behavior: smooth;
+}
+body {
+	margin: 0;
+	background: #FFFAF0;
+	text-decoration: none;
+	overflow-x: hidden;
+	width: 100%;
+    padding: 0px;
+}
+.header {
+	display: grid;
+	grid-template-columns: 1fr 2fr 1fr;
+	grid-template-areas: "lang nav logo";
+	height: 63px;
+	width: 100%;
+	background-color: black;
+	position: fixed;
+}
+.header a {
+	color: #FFFAFA;
+}
+.logo {
+	grid-area: logo;
+	align-self: center;
+	justify-self: end;
+	color: #FFFAFA;
+	margin: 0;
+}
+.logo a {
+	text-decoration: none;
+}
+.logo a:hover {
+	color: gold;
+}
+
+
+.openSlide {
+	display: grid;
+	justify-self: flex-end;
+	align-self: center;
+}
+.openSlide a {
+	align-self: center;
+	margin-right: 6px;
+}
+.sideNav {
+	height: 100%;
+	width: 0;
+	position: fixed;
+	z-index: 1;
+	top: 0;
+	right: 0;
+	background-color: #111;
+	opacity: 0.9;
+	overflow-x: hidden;
+	padding-top: 60px;
+	transition: 0.5s;
+
+}
+.sideNav a {
+	padding: 10px 30px 10px 10px;
+	text-decoration: none;
+	font-size: 22px;
+	color: #FFFAFA;
+	display: block;
+	transition: 0.3s;
+	text-align: right;
+}
+.sideNav a:hover {
+	color: gold;
+}
+.sideNav .btnClose {
+	position: absolute;
+	top: 0;
+	right: 22px;
+	font-size: 36px;
+	margin-right: 50px;
+	padding-right: 115px;
+}
+.nav {
+	width: 100%;
+	justify-self: center;
+	grid-area: nav;
+	align-self: center;
+}
+.nav ul {
+	display: grid;
+	padding: 0;
+	list-style: none;
+	grid-template-columns: repeat(4, 1fr);	
+	margin: 0;
+}
+.nav a {
+	font-weight: bold;
+	display: block;
+  	text-decoration: none;
+  	padding: 10px;
+ 	text-align: center;
+}
+.nav a:hover {
+	color: gold;
+}
+
+
+
+
+.lang {
+	grid-area: lang;
+	align-self: center;
+	justify-self: start;
+	margin: 0;
+	text-align: left;
+	padding-left: 3px;
+}
+.lang a {
+	border: solid 1px;
+	text-decoration: none;
+	color: #FFFAFA;
+}
+.lang a:hover {
+
+	color: gold;
+}
+
+.cateringHeader {
+	height: 100vh;
+	width: 100%;
+	display: grid;
+	grid-template-columns: 1fr;
+	background-image: url(../images/cateringheader.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: top;
+
+}
+
+.cateringHeader h1 {
+	font-size: 50px;
+	color: white;
+	align-self: center;
+	justify-self: center;
+	text-align: center;
+	background-color: black;
+
+}
+.top {
+	display: grid;
+	width: 100%;
+	background-color: #FFFAFA;
+}
+.top h1 {
+
+	text-align: center;
+	justify-self: center;
+	align-self: center;
+	color: black;
+}
+.top p {
+	width: 70%;
+	text-align: center;
+	justify-self: center;
+	color: black;
+}
+
+.bottom {	
+	display: grid;
+	width: 100%;
+	background-color: #87CEEB;
+	justify-self: center;
+	background: url(../images/svg1.svg);
+	background-repeat: no-repeat;
+	background-size: cover;
+
+
+}
+.bottom h1 {
+	justify-self: center;
+	text-align: center;
+	align-self: center;
+}
+.form1 {
+	justify-self: center;
+	align-self: center;
+	display: grid;
+	grid-gap: 10px;
+	align-items: center;
+	margin-top: 20px;
+	margin-bottom: 20px;
+}
+
+
+.name, .email, .bookButton {
+	border: 1px solid black;
+	padding: 0;
+	font-size: 14px;
+	height: 29px;
+	width: 300px;
+	background-color: #FFFAFA;
+	justify-self: center;
+}
+textarea {
+	height: 200px;
+	width: 300px;
+	border: 1px solid black;
+	padding: 0;
+	font-size: 14px;
+	resize: none;
+	background-color: #FFFAFA;
+
+
+}
+
+
+
+
+
+
+
+
+footer {
+	width: 100%;
+	background-color: black;
+	display: grid;
+	grid-template-rows: 1fr 30px;
+	grid-template-areas: "topfooter" "bottomfooter";
+
+}
+.footer {
+	grid-area: topfooter;
+	width: 100%;
+	background-color: black;
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr;
+	grid-template-areas: "contact hours location";
+	grid-gap: 0;
+
+}
+.footer h3 {
+	color: #FFFAFA;
+}
+
+
+.footer p {
+	color: gold;
+}
+.footer a {
+	color: gold;
+	text-decoration: none;
+}
+.footer a:hover {
+	color: grey;
+}
+
+.contact {
+	grid-area: contact;
+	justify-self: center;
+	justify-items: center;
+	align-self: center;
+	align-items: center;
+	text-align: center;
+}
+
+
+.icons-social a {
+	color: gold;
+	font-size: 25px;
+}
+.icons-social a:hover {
+	color: grey;
+}
+.icons-social a svg path{
+	fill: #0277BD;
+}
+
+.hours {
+	grid-area: hours;
+	justify-self: center;
+	align-self: center;
+	text-align: center;
+
+}
+.location {
+	grid-area: location;
+	justify-self: center;
+	align-self: center;
+	text-align: center;
+
+}
+.subfooter {
+	grid-area: bottomfooter;
+	background-color: #0c0c0c;
+	width: 100%;
+	display: grid;
+}
+.subfooter p {
+	margin: 0;	
+	align-self: center;
+	justify-self: center;
+	color: #FFFAFA;
+}
+.cateringForm {
+	display: grid;
+	width: 100%;
+	background-color: #FFFAFA;
+}
+
+.cateringForm form {
+
+	display: grid;
+	justify-items: center;
+}
+
+
+
+
+
+
+
+
+
+
+/* Media Queries */
+@media(max-width: 769px){
+
+	.nav {
+		display: none;
+	}
+	.logo {
+		grid-area: nav;
+		align-self: center;
+		justify-self: center;
+	}
+
+
+	.footer {
+		grid-template-rows: repeat(3, 1fr);
+		grid-template-columns: 1fr;
+		grid-template-areas: "contact1" "hours1" "location1";
+
+	}
+
+	.contact {
+		grid-area: contact1;
+		justify-self: center;
+		align-self: center;
+
+	}
+	.hours {
+		grid-area: hours1;
+		justify-self: center;
+		align-self: center;
+
+	}
+	.location {
+		grid-area: location1;
+		justify-self: center;
+		align-self: center;
+
+	}
+}
+
+
+@media (min-width: 769px){
+	.openSlide {
+		display: none;
+	}
+}
+
+@media (max-width: 624px){
+
+	.name, .email, .bookButton {
+
+		width: 250px;
+
+	}
+	textarea {
+		width: 250px;
+
+
+	}
+
+
+
+}
+
+
+@media (max-width: 450px){
+
+	.cateringHeader h1 {
+	font-size: 40px;
+
+
+}
+}
+
+
+
+@media (max-width: 346px){
+
+	
+	.cateringHeader h1 {
+	font-size: 30px;
+
+
+}
+}
+
+
