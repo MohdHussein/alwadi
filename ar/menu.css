@@ -181,9 +181,6 @@ body {
 	background-color: #87CEEB !important;
 }
 
-#bfLink {
-	background-color: #87CEEB;
-}
 
 
 
@@ -233,12 +230,14 @@ body {
 }
 
 
+
 #mainCourse, #coldDrinks, #hotDrinks, #deserts {
 	display: none;
 }
 
-
-
+.active {
+	background-color: #87CEEB !important;
+}
 
 
 

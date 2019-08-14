@@ -180,12 +180,6 @@ body {
 	background-color: #87CEEB !important;
 }
 
-#bfLink {
-	background-color: #87CEEB;
-}
-
-
-
 .menuBody {
   width: 60%;
   margin: 0 auto;
@@ -193,9 +187,6 @@ body {
   color: #FFFAFA;
   display: grid;
 
-}
- 
-.menuSection {
 }
  
 .menuSectionTitle {
@@ -233,16 +224,13 @@ body {
   color: black;
 }
 
-
-#breakfast {
-
-}
 #mainCourse, #coldDrinks, #hotDrinks, #deserts {
 	display: none;
 }
 
-
-
+.active {
+	background-color: #87CEEB !important;
+}
 
 
 
