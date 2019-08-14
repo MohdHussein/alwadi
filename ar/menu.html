@@ -5,7 +5,6 @@
 	<title>مطعم الوادي | القائمة</title>
 	<link rel="stylesheet" type="text/css" href="menu.css">
 	<meta name="viewport" content="width=device-width,initial-scale=1.0">
-	<script src="script.js"></script> 
 	<link href="https://use.fontawesome.com/releases/v5.0.8/css/all.css" rel="stylesheet">
 	<link href="https://fonts.googleapis.com/css?family=Cairo|Merriweather+Sans" rel="stylesheet"> 
 </head>
@@ -49,11 +48,11 @@
 		</div>	
 		<div class="selectSection">
 			<div class="selectHolder">
-				<a id="dLink" onclick="desertsList()">الحلى</a>
-				<a id="hdLink" onclick="hotDrinksList()">المشروبات الساخنة</a>
-				<a id="cdLink" onclick="coldDrinksList()">المشروبات الباردة</a>
-				<a id= "mcLink" onclick="mainCourseList()">الوجبات الرئيسية</a>
-				<a id="bfLink" onclick="breakfastList()">الإفطار</a>
+				<a id="dLink">الحلى</a>
+				<a id="hdLink">المشروبات الساخنة</a>
+				<a id="cdLink">المشروبات الباردة</a>
+				<a id= "mcLink">الوجبات الرئيسية</a>
+				<a id="bfLink" class="active">الإفطار</a>
 			</div>
 		</div>
 		<div class="menuBody">
@@ -275,6 +274,7 @@
 
 
 
+	<script src="menu.js"></script> 
 
 </body>
 </html>
