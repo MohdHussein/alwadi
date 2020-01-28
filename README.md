@@ -1,3 +1,3 @@
 Restuarant website.
 
-demo: https://mohdhussein.net/alwadi
+demo: https://mohdhussein.github.io/alwadi/
