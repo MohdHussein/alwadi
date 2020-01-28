@@ -1,102 +1,116 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-	<meta charset="UTF-8">
-	<title>Al Wadi Restaurant | Catering</title>
-	<link rel="stylesheet" type="text/css" href="catering.css">
-	<meta name="viewport" content="width=device-width,initial-scale=1.0">
-	<link href="https://use.fontawesome.com/releases/v5.0.8/css/all.css" rel="stylesheet">
-	<link href="https://fonts.googleapis.com/css?family=Cairo|Merriweather+Sans" rel="stylesheet"> 
-</head>
-<body>
-	<header class="header">
-		<span class="openSlide">
-			<a href="javascript:void(0);" onclick="openSlideMenu()">
-				<svg width="30" height="30">
-					<path d="M0,5 30,5" stroke="#FFF" stroke-width="5"/>
-					<path d="M0,14 30,14" stroke="#FFF" stroke-width="5"/>
-					<path d="M0,23 30,23" stroke="#FFF" stroke-width="5"/>
-				</svg>
-			</a>
-		</span>
-		<div id="sideMenu" class="sideNav">
-			<a href="#" class="btnClose" onclick="closeSlideMenu()">&times;</a>
-			<a href="index.html">Home</a>
-			<a href="menu.html">Menu</a>
-			<a href="catering.html">Catering</a>
-			<a href="index.html#reservation">Reservations</a>
-			<a href="#contactUs">Contact</a>
-		</div>
-		<h2 class="logo"><a href="index.html">Al Wadi</a></h2>
-		<nav class="nav">
-			<ul>
-				<li><a href="menu.html">Menu</a></li>
-				<li><a href="catering.html">Catering</a></li>
-				<li><a href="index.html#reservation">Reservations</a></li>
-				<li><a href="#contactUs">Contact</a></li>
-			</ul>
-		</nav>
-		<div class="lang">
-			<a href="ar/index.html">العربية</a>
-		</div>
-	</header>
-		<div class="cateringHeader">
-			<h1>Catering Service</h1>
-		</div>
-			<div class="top">
-				<H1>How can we help you?</H1>
-				<p>We provide catering services to both government and private sectors across San Francisco. We perform full operational services for customers’ central kitchens and provide them with specialized skilled team members, including dietitians, quality controllers, chefs, assistants, and waiters. Our menus offered to customers operation include a wide range of food varieties designed to meet or exceed meet customers’ expectations.</p>
 
-			</div>
-			<div class="bottom">
-				<h1>Catering Form</h1>
-				<form class="form1">
-					<input id="field1" type="text" name="name" class="name" placeholder="Enter your name" required>
-					<input id="field2" type="email" name="email" class="email" placeholder="Enter your email" required>
-					<textarea id="field3" placeholder="Write in details about the service required, number of people to be catered, location, etc." required></textarea>
-					<button class="bookButton" value="Book" type="submit" onclick="cateringAlert()">Submit</button>	
-				</form>
-			</div>
+  <head>
+    <meta charset="UTF-8">
+    <title>Al Wadi Restaurant | Catering</title>
+    <link rel="stylesheet" type="text/css" href="catering.css">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <link href="https://use.fontawesome.com/releases/v5.0.8/css/all.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Cairo|Merriweather+Sans" rel="stylesheet">
+  </head>
 
+  <body>
+    <header class="header">
+      <span class="openSlide">
+        <a href="javascript:void(0);" onclick="openSlideMenu()">
+          <svg width="30" height="30">
+            <path d="M0,5 30,5" stroke="#FFF" stroke-width="5"/>
+            <path d="M0,14 30,14" stroke="#FFF" stroke-width="5"/>
+            <path d="M0,23 30,23" stroke="#FFF" stroke-width="5"/>
+          </svg>
+        </a>
+      </span>
+      <div id="sideMenu" class="sideNav">
+        <a href="#" class="btnClose" onclick="closeSlideMenu()">&times;</a>
+        <a href="index.html">Home</a>
+        <a href="menu.html">Menu</a>
+        <a href="catering.html">Catering</a>
+        <a href="index.html#reservation">Reservations</a>
+        <a href="#contactUs">Contact</a>
+      </div>
+      <h2 class="logo">
+        <a href="index.html">Al Wadi</a>
+      </h2>
+      <nav class="nav">
+        <ul>
+          <li>
+            <a href="menu.html">Menu</a>
+          </li>
+          <li>
+            <a href="catering.html">Catering</a>
+          </li>
+          <li>
+            <a href="index.html#reservation">Reservations</a>
+          </li>
+          <li>
+            <a href="#contactUs">Contact</a>
+          </li>
+        </ul>
+      </nav>
+      <div class="lang">
+        <a href="ar/index.html">العربية</a>
+      </div>
+    </header>
+    <div class="cateringHeader">
+      <h1>Catering Service</h1>
+    </div>
+    <div class="top">
+      <h1>How can we help you?</h1>
+      <p>We provide catering services to both government and private sectors across San Francisco. We perform full operational services for customers’ central kitchens and provide them with specialized skilled team members, including dietitians, quality controllers, chefs, assistants, and waiters. Our menus offered to customers operation include a wide range of food varieties designed to meet or exceed meet customers’ expectations.</p>
 
-	<footer> 
-		<div class="footer" id="contactUs">
-			<div class="contact" >
-				<h3>Contact</h3>
-				<p>(212) 444 313 959</p>
-				<p>hi@mohdhussein.net</p>
-				
-				<div class="icons-social">
-				<a target="_blank" href="https://github.com/mohdhussein/alwadi"><i class="fab fa-github"></i></a>
-				<a target="_blank" href="https://twitter.com/ItssMohammed"><i class="fab fa-twitter"></i></a>
-				<a target="_blank" href="https://www.instagram.com/"><i class="fab fa-instagram"></i></a>
-	    		</div>
+    </div>
+    <div class="bottom">
+      <h1>Catering Form</h1>
+      <form class="form1">
+        <input id="field1" type="text" name="name" class="name" placeholder="Enter your name" onkeyup="onlyLetters(this)" required="required">
+        <input id="field2" type="email" name="email" class="email" placeholder="Enter your email" onkeyup="formEmail(this)" required="required">
+        <textarea id="field3" placeholder="Write in details about the service required, number of people to be catered, location, etc." onkeyup="lettersAndNumbers(this)" required="required"></textarea>
+        <button class="bookButton" value="Book" type="submit" onclick="cateringAlert()">Submit</button>
+      </form>
+    </div>
 
-	
-			</div>
-			<div class="hours">
-				<h3>Opening Hours</h3>
-				<p>Sun - Thur: 10 AM - 10 PM</p>
-				<p>Fri & Sat: 10 AM - 12 PM</p>
-				<p>Closed in Holidays.</p>
-			</div>			
-			<div class="location">
-				<h3>Location</h3>
-				<p>7912 International Blvd</p>
-				<p>Oakland, CA</p>
-				<a target="_blank" href="https://www.google.com.my/maps/place/Masala+Cuisine/@37.7573274,-122.1853263,17z/data=!4m8!1m2!2m1!1sRestaurants!3m4!1s0x0:0x24bd6236c7e641ee!8m2!3d37.7570371!4d-122.1819102">Open in Google Maps</a>
+    <footer>
+      <div class="footer" id="contactUs">
+        <div class="contact">
+          <h3>Contact</h3>
+          <p>(212) 444 313 959</p>
+          <p>hi@mohdhussein.net</p>
 
-			</div>
-		</div>
-		<div class="subfooter">
-			<p>2019 ©</p>
-		</div>
-	</footer>
+          <div class="icons-social">
+            <a target="_blank" href="https://github.com/mohdhussein/alwadi">
+              <i class="fab fa-github"></i>
+            </a>
+            <a target="_blank" href="https://twitter.com/ItssMohammed">
+              <i class="fab fa-twitter"></i>
+            </a>
+            <a target="_blank" href="https://www.instagram.com/">
+              <i class="fab fa-instagram"></i>
+            </a>
+          </div>
 
+        </div>
+        <div class="hours">
+          <h3>Opening Hours</h3>
+          <p>Sun - Thur: 10 AM - 10 PM</p>
+          <p>Fri & Sat: 10 AM - 12 PM</p>
+          <p>Closed in Holidays.</p>
+        </div>
+        <div class="location">
+          <h3>Location</h3>
+          <p>7912 International Blvd</p>
+          <p>Oakland, CA</p>
+          <a target="_blank" href="https://www.google.com.my/maps/place/Masala+Cuisine/@37.7573274,-122.1853263,17z/data=!4m8!1m2!2m1!1sRestaurants!3m4!1s0x0:0x24bd6236c7e641ee!8m2!3d37.7570371!4d-122.1819102">Open in Google Maps</a>
 
+        </div>
+      </div>
+      <div class="subfooter">
+        <p>2019 ©</p>
+      </div>
+    </footer>
 
+    <script src="script.js"></script>
 
-	<script src="script.js"></script> 
+  </body>
 
-</body>
 </html>
