@@ -57,3 +57,18 @@ function reservationAlert() {
     alert("Thank you for submitting the form. We will email you within 3 hours about your reservation.");
   }
 }
+
+function lettersAndNumbers(input) {
+  var regex = /[^a-z 0-9 , . \s]/gi;
+  input.value = input.value.replace(regex, "");
+}
+
+function onlyLetters(input) {
+  var regex = /[^a-z]/gi;
+  input.value = input.value.replace(regex, "");
+}
+
+function formEmail(input) {
+  var regex = /[^a-z 0-9 . @ _ -]/gi;
+  input.value = input.value.replace(regex, "");
+}
