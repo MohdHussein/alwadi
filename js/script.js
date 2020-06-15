@@ -12,7 +12,7 @@ setInterval(() => {
   let randomNumber = Math.floor(Math.random() * imgsArray.length);
   // Change background img url
 
-landingPage.style.backgroundImage = 'url("../images/' + imgsArray[randomNumber] +'")';
+landingPage.style.backgroundImage = 'url("images/' + imgsArray[randomNumber] +'")';
 }, 15000);
 
 // Slide Menu
