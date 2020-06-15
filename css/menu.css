@@ -1,0 +1,412 @@
+:root {
+	--main-color: rgb(163, 162, 162); 
+}
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+html {
+	scroll-behavior: smooth;
+}
+body {
+	font-family: 'Cairo', sans-serif;
+	font-family: 'Merriweather Sans', sans-serif;
+	overflow-x: hidden;
+}
+
+/* Start of landing page, overlay, header, slide menu and welcome text*/
+.landingPage {
+	min-height: 100vh;
+	background-image: url(../images/menu1.jpg);
+	background-size: cover;
+	position: relative;
+	transition: all 0.5s;
+}
+.landingPage .overlay {
+	background-color:rgba(0, 0, 0, .6);
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	left: 0;
+	top: 0;
+	z-index: 1;
+}
+.navBar {
+	position: relative;
+	z-index: 3;
+	display: grid;
+	grid-template-columns: 1fr 2fr 1fr;
+	grid-template-areas: "logo nav lang";
+	height: 63px;
+	width: 100%;
+	font-size: 20px;
+	position: absolute;
+	top: 0;
+	transition: all 0.35s linear;
+	animation: 1s fadein 0.5s forwards;
+	opacity: 0;
+}
+@keyframes fadein {
+	100% {
+		opacity: 1;
+	}
+}
+
+.navBar a {
+	color: #FFF;
+}
+.logo {
+	grid-area: logo;
+	align-self: center;
+	justify-self: start;
+	margin-left: 6px;
+}
+.logo a {
+	text-decoration: none;
+	font-size: 24px;
+	font-weight: 500;
+}
+.logo a:hover {
+	color: var(--main-color);
+}
+.navLinks {
+	width: 100%;
+	justify-self: center;
+	grid-area: nav;
+	align-self: center;
+	justify-content: center;
+	display: flex;
+	text-align: center;
+	column-gap: 30px;
+}
+.navLinks a {
+	text-decoration: none;
+	cursor: pointer;
+	font-size: 18px;
+}
+.navLinks a:hover {
+	color: var(--main-color);
+}
+
+.lang {
+	grid-area: lang;
+	align-self: center;
+	justify-self: end;
+	margin: 0;
+	text-align: right;
+	padding-right: 6px;
+}
+.lang a {
+	text-decoration: none;
+	color: #FFF;
+}
+
+.lang a:hover {
+
+	color: var(--main-color);
+}
+
+
+
+/* Start of Slide Menu */
+
+.openSlide {
+	display: grid;
+}
+.openSlide a {
+	align-self: center;
+	margin-left: 6px;
+}
+.openSlide .menuIcon {
+	color: #FFF;
+	font-size: 25px;
+	transition: .8s;
+	align-self: center;
+	justify-self: center;
+}
+.openSlide .menuIcon:hover {
+	color: var(--main-color);
+	transition: .8s;
+}
+.sideNav {
+	height: 100%;
+	width: 0;
+	position: fixed;
+	z-index: 1;
+	top: 0;
+	left: 0;
+	background-color: #111;
+	opacity: 0.9;
+	overflow-x: hidden;
+	padding-top: 60px;
+	transition: 0.5s;
+
+}
+.sideNav a {
+	padding: 10px 10px 10px 30px;
+	text-decoration: none;
+	font-size: 22px;
+	color: #FFF;
+	display: block;
+	transition: 0.3s;
+}
+.sideNav a:hover {
+	color: var(--main-color);
+}
+.sideNav .btnClose {
+	position: absolute;
+	top: 0;
+	right: 22px;
+	font-size: 36px;
+	margin-left: 50px;
+}
+
+/* welcome text */
+.welcomeText {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	z-index: 2;
+	color: #FFF;
+	text-align: center;
+	opacity: 0;
+	margin-top: 100px;
+	animation: 1s slidefade 1s forwards;
+}
+
+@keyframes slidefade {
+100% {
+	opacity: 1;
+	margin: 0;
+}
+}
+.welcomeText h1 {
+	font-size: 38px;
+	margin: 0 0 12px;
+}
+.welcomeText h1 span {
+	color: var(--main-color);
+}
+.welcomeText p {
+	font-size: 20px;
+	margin: 0;
+	line-height: 1.6;
+
+}
+
+
+.container {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	padding: 100px 80px;
+}
+
+.selectSection {
+	display: grid;
+	grid-template-columns: repeat( 5, 1fr);
+	justify-content: center;
+	text-align: center;
+}
+.selectSection button {
+	font-size: 1.2rem;
+	background-color: rgba(209, 207, 207, 0.575);
+	box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+
+	list-style: none;	
+	margin-left: 10px;
+	margin-bottom: 10px;
+	border: 0;
+}
+.selectSection button:hover {
+	cursor: pointer;
+}
+.active {
+	background-color: #87CEEB !important;
+}
+
+.menuSection:not(:first-child) {
+	display: none;
+}
+
+.menuBody {
+	width: 60%;
+	margin: 100px auto;
+	display: block;
+	color: #FFFAFA;
+	display: grid;
+}
+
+.menuSectionTitle {
+	font-size: 34px;
+	display: block;
+	font-weight:normal;
+	margin: 20px 0; 
+	text-align: Center;
+	color: black;
+
+}
+
+.menuItem {
+	margin: 35px 0;
+	font-size: 18px;
+	color: black;
+}
+
+.menuItemName {
+	font-weight: bold;
+	border-bottom: 2px dotted rgb(213, 213, 213);
+	color: black;
+}
+
+.menuItemDescription {
+	font-style: italic;
+	font-size: .9em;
+	line-height: 1.5em;
+	color: #242323;
+}
+
+.menuItemPrice {
+	float: right;
+	font-weight: bold;
+	margin-top: -22px;
+	color: black;
+}
+
+
+
+
+/* Footer section */
+.footer {
+	width: 100%;
+	background-color: black;
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr;
+	grid-template-areas: "contact hours location";
+	grid-gap: 0;
+}
+.footer h3 {
+	color: #FFFAFA;
+}
+.footer p {
+	color: var(--main-color);
+}
+.footer a {
+	color: var(--main-color);
+	text-decoration: none;
+}
+.footer a:hover {
+	color: grey;
+}
+.contact, .hours, .location {
+	display: grid;
+	justify-items: center;
+	align-items: center;
+	text-align: center;
+	width: 100%;
+	padding: 20px;
+	grid-template-rows: repeat(4, 1fr);
+}
+.contact {
+	grid-area: contact;
+}
+.icons-social a {
+	color: var(--main-color);
+	font-size: 25px;
+}
+.icons-social a:hover {
+	color: grey;
+}
+.hours {
+	grid-area: hours;
+}
+.location {
+	grid-area: location;
+}
+.subfooter {
+	background-color: #050505;
+	width: 100%;
+	text-align: center;
+	height: 30px;
+}
+.subfooter p {
+	margin: 0;	
+	align-self: center;
+	justify-self: center;
+	color: #FFFAFA;
+}
+
+
+@media (max-width: 800px) {
+.container {
+	padding: 50px 20px;
+}
+
+}
+
+/* Media Queries */
+@media(max-width: 769px){
+
+.navLinks {
+	display: none;
+}
+.logo {
+	grid-area: nav;
+	justify-self: center;
+}
+.features {	
+	grid-template-columns: 1fr;
+
+}
+.footer {
+	grid-template-rows: repeat(3, 1fr);
+	grid-template-columns: 1fr;
+	grid-template-areas: "contact1" "hours1" "location1";
+}
+.contact {
+	grid-area: contact1;
+}
+.hours {
+	grid-area: hours1;
+}
+.location {
+	grid-area: location1;
+}
+}
+
+
+@media (min-width: 769px){
+.openSlide {
+	display: none;
+}
+}
+
+/*****************************************/
+
+
+
+@media (max-width: 624px){
+.selectSection {
+	grid-template-columns: 1fr 1fr 1fr;
+	grid-auto-rows: 1fr 1fr;
+}
+}
+
+.menuBody {
+	width: 100%;
+	margin: 30px auto;
+}
+
+
+
+@media (max-width: 346px){
+.selectSection {
+	grid-template-columns: 1fr 1fr;
+	grid-auto-rows: 1fr 1fr 1fr;
+} 
+}
+
+

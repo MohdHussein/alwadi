@@ -1,302 +1,306 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
 	<meta charset="UTF-8">
 	<title>Al Wadi Restaurant | Menu</title>
-	<link rel="stylesheet" type="text/css" href="menu.css">
 	<meta name="viewport" content="width=device-width,initial-scale=1.0">
-	<link href="https://use.fontawesome.com/releases/v5.0.8/css/all.css" rel="stylesheet">
-	<link href="https://fonts.googleapis.com/css?family=Cairo|Merriweather+Sans" rel="stylesheet"> 
+	<link rel="stylesheet" href="css/menu.css" type="text/css">
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Cairo|Merriweather+Sans">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.8/css/all.css">
 </head>
+
 <body>
-	<header class="header">
-		<span class="openSlide">
-			<a href="javascript:void(0);" onclick="openSlideMenu()">
-				<svg width="30" height="30">
-					<path d="M0,5 30,5" stroke="#FFF" stroke-width="5"/>
-					<path d="M0,14 30,14" stroke="#FFF" stroke-width="5"/>
-					<path d="M0,23 30,23" stroke="#FFF" stroke-width="5"/>
-				</svg>
-			</a>
-		</span>
-		<div id="sideMenu" class="sideNav">
-			<a href="#" class="btnClose" onclick="closeSlideMenu()">&times;</a>
-			<a href="index.html">Home</a>
-			<a href="menu.html">Menu</a>
-			<a href="catering.html">Catering</a>
-			<a href="index.html#reservation">Reservations</a>
-			<a href="#contactUs">Contact</a>
+	<section class="landingPage">
+		<div class="overlay"></div>
+		<header class="navBar">
+			<span class="openSlide">
+				<a href="javascript:void(0);" onclick="openSlideMenu()">
+					<i class="fas fa-bars menuIcon"></i>
+				</a>
+			</span>
+			<div class="logo">
+				<a href="index.html">Al Wadi</a>
+			</div>
+			<nav class="navLinks">
+				<a href="#">Menu</a>
+				<a href="catering.html">Catering</a>
+				<a href="index.html#reservation">Reservations</a>
+				<a href="#contact">Contact</a>
+			</nav>
+			<div class="lang">
+				<a href="ar/menu.html">العربية</a>
+			</div>
+			<div id="sideMenu" class="sideNav">
+				<a href="javascript:void(0)" class="btnClose" onclick="closeSlideMenu()">&times;</a>
+				<a href="index.html">Home</a>
+				<a href="#">Menu</a>
+				<a href="catering.html">Catering</a>
+				<a href="index.html#reservation">Reservations</a>
+				<a href="#contact">Contact</a>
+			</div>
+		</header>
+		<div class="welcomeText">
+			<h1>Our <span>Menu</span></h1>
 		</div>
-		<h2 class="logo"><a href="index.html">Al Wadi</a></h2>
-		<nav class="nav">
-			<ul>
-				<li><a href="menu.html">Menu</a></li>
-				<li><a href="catering.html">Catering</a></li>
-				<li><a href="index.html#reservation">Reservations</a></li>
-				<li><a href="#contactUs">Contact</a></li>
-			</ul>
-		</nav>
-		<div class="lang">
-			<a href="ar/index.html">العربية</a>
-		</div>
-	</header>
-	<div class="body">
-		<div class="menuHeader">
-			<h1>Our Menu</h1>
-		</div>	
-		<div class="selectSection">
-			<div class="selectHolder">
-				<a id="bfLink" class="active">Breakfast</a>
-				<a id="mcLink">Main Course</a>
-				<a id="cdLink">Cold Drinks</a>
-				<a id="hdLink">Hot Drinks</a>
-				<a id="dLink">Deserts</a>
-			</div>
-		</div>
-		<div class="menuBody">
-			<div class="menuSection" id="breakfast">
-				<h2 class="menuSectionTitle">Breakfast</h2>
-				<div class="menuItem">
-					<div class="menuItemName">
-						Shakshuka
-					</div>
-					<div class="menuItemPrice">
-						$7
-					</div>
-					<div class="menuItemDescription">
-						Shakshuka is a dish of scrambled eggs with tomatoes, chili peppers, and onions.
-					</div>
-				</div>
-				<div class="menuItem">
-					<div class="menuItemName">
-						Fool Sanaani
-					</div>
-					<div class="menuItemPrice">
-						$8
-					</div>
-					<div class="menuItemDescription">
-						Mashed fava beans mixed with egg, cooked with vegetables like onion, tomatoes, chili peppers, etc and mix of spices. 
-					</div>
-				</div>
-				<div class="menuItem">
-					<div class="menuItemName">
-						Kebda
-					</div>
-					<div class="menuItemPrice">
-						$9
-					</div>
-					<div class="menuItemDescription">
-						Kebda, or liver, is a popular breakfast food in Yemen. it's cooked with ingredients like onion, bell pepper and tomatoes.
-					</div>
-				</div>
-				<div class="menuItem">
-					<div class="menuItemName">
-						Bint Al-Sahn
-					</div>
-					<div class="menuItemPrice">
-						$4
-					</div>
-					<div class="menuItemDescription">
-						It's a Yemeni sweet dish made from a dough, white flour, eggs, yeast and clarified butter. It is baked in multiple layers in an oven, which is served with honey on top and sprinkled with Nigella sativa.
-					</div>
-				</div>
-			</div>
-			<div class="menuSection" id="mainCourse">
-				<h2 class="menuSectionTitle">Main Course</h2>
-				<div class="menuItem">
-					<div class="menuItemName">
-						Mandi (Chicken/Lamb)
-					</div>
-					<div class="menuItemPrice">
-						$14
-					</div>
-					<div class="menuItemDescription">
-						Mandi consists meat and rice with a special blend of Baharat/spices. The meat is cooked in the tannur which is a special kind of oven which is usually a pit dug up in the ground and covered with clay all around its sides.
-					</div>
-				</div>
-				<div class="menuItem">
-					<div class="menuItemName">
-						Haneeth Lamb 
-					</div>
-					<div class="menuItemPrice">
-						$18
-					</div>
-					<div class="menuItemDescription">
-						Haneeth is made from rice, meat (lamb),and a mixture of spices. It is considered as the main dish served at special events.
-					</div>
-				</div>
-				<div class="menuItem">
-					<div class="menuItemName">
-						Sal'tah
-					</div>
-					<div class="menuItemPrice">
-						$12
-					</div>
-					<div class="menuItemDescription">
-						The base is a brown meat stew called maraq, a dollop of fenugreek froth (holba), and sahawiq. Rice, potatoes, scrambled eggs, and vegetables are common additions to saltah. Meats used in the preparation of this dish are typically lamb or chicken.
-					</div>
-				</div>
-				<div class="menuItem">
-					<div class="menuItemName">
-						Ogdah
-					</div>
-					<div class="menuItemPrice">
-						$30
-					</div>
-					<div class="menuItemDescription">
-						Ogdah, meaning "knot", is a stew made from tying and mixing all the ingredients together. It can be made with small pieces of lamb, chicken, or fish that is mixed and cooked together with vegetables, including carrots, potatoes, onions, etc.
-					</div>
-				</div>
-			</div>
-			<div class="menuSection" id="coldDrinks">
-				<h2 class="menuSectionTitle">Cold Drinks</h2>
-				<div class="menuItem">
-					<div class="menuItemName">
-						Mineral Water
-					</div>
-					<div class="menuItemPrice">
-						$1
-					</div>
-				</div>
-				<div class="menuItem">
-					<div class="menuItemName">
-						Soft Drink (Pepsi, 7UP, etc.)
-					</div>
-					<div class="menuItemPrice">
-						$3
-					</div>
-				</div>
-				<div class="menuItem">
-					<div class="menuItemName">
-						Orange Juice
-					</div>
-					<div class="menuItemPrice">
-						$5
-					</div>
-				</div>
-
-				<div class="menuItem">
-					<div class="menuItemName">
-						Mixed Fruit Juice
-					</div>
-					<div class="menuItemPrice">
-						$7
-					</div>
-				</div>
-			</div>
-			<div class="menuSection" id="hotDrinks">
-				<h2 class="menuSectionTitle">Hot Drinks</h2>
-				<div class="menuItem">
-					<div class="menuItemName">
-						Red Tea
-					</div>
-					<div class="menuItemPrice">
-						$3
-					</div>
-				</div>
-				<div class="menuItem">
-					<div class="menuItemName">
-						Adani Tea
-					</div>
-					<div class="menuItemPrice">
-						$3
-					</div>
-				</div>
-				<div class="menuItem">
-					<div class="menuItemName">
-						Black Coffee 
-					</div>
-					<div class="menuItemPrice">
-						$2
-					</div>
-				</div>
-				<div class="menuItem">
-					<div class="menuItemName">
-						Mocha
-					</div>
-					<div class="menuItemPrice">
-						$5
-					</div>
-				</div>
-			</div>
-			<div class="menuSection" id="deserts">
-				<h2 class="menuSectionTitle">Deserts</h2>
-				<div class="menuItem">
-					<div class="menuItemName">
-						Ma'soub
-					</div>
-					<div class="menuItemPrice">
-						$6
-					</div>
-				</div>
-				<div class="menuItem">
-					<div class="menuItemName">
-						Areeka
-					</div>
-					<div class="menuItemPrice">
-						$6
-					</div>
-				</div>
-				<div class="menuItem">
-					<div class="menuItemName">
-						Chocolate Cake
-					</div>
-					<div class="menuItemPrice">
-						$7
-					</div>
-				</div>
-				<div class="menuItem">
-					<div class="menuItemName">
-						Basbousa
-					</div>
-					<div class="menuItemPrice">
-						$9
-					</div>
-				</div>
-			</div>
-
-
-		</div>
-
+	</section>
+<section class="container">
+	<div class="selectSection">
+			<button type="button" data-menu="breakfast" class="active">Breakfast</button>
+			<button type="button" data-menu="mainCourse">Main Course</button>
+			<button type="button" data-menu="coldDrinks">Cold Drinks</button>
+			<button type="button" data-menu="hotDrinks">Hot Drinks</button>
+			<button type="button" data-menu="deserts">Deserts</button>
 	</div>
-	<footer> 
-		<div class="footer" id="contactUs">
-			<div class="contact">
-				<h3>Contact</h3>
-				<p>(212) 444 313 959</p>
-				<p>hi@mohdhussein.net</p>
-
-				<div class="icons-social">
-					<a target="_blank" href="https://github.com/mohdhussein/alwadi"><i class="fab fa-github"></i></a>
-					<a target="_blank" href="https://twitter.com/ItssMohammed"><i class="fab fa-twitter"></i></a>
-					<a target="_blank" href="https://www.instagram.com/"><i class="fab fa-instagram"></i></a>
+	<div class="menuBody">
+		<div class="menuSection" data-menu="breakfast">
+			<h2 class="menuSectionTitle">Breakfast</h2>
+			<div class="menuItem">
+				<div class="menuItemName">
+					Shakshuka
 				</div>
-
-
+				<div class="menuItemPrice">
+					$7
+				</div>
+				<div class="menuItemDescription">
+					Shakshuka is a dish of scrambled eggs with tomatoes, chili peppers, and onions.
+				</div>
 			</div>
-			<div class="hours">
-				<h3>Opening Hours</h3>
-				<p>Sun - Thur: 10 AM - 10 PM</p>
-				<p>Fri & Sat: 10 AM - 12 PM</p>
-				<p>Closed in Holidays.</p>
-			</div>			
-			<div class="location">
-				<h3>Location</h3>
-				<p>7912 International Blvd</p>
-				<p>Oakland, CA</p>
-				<a target="_blank" href="https://www.google.com.my/maps/place/Masala+Cuisine/@37.7573274,-122.1853263,17z/data=!4m8!1m2!2m1!1sRestaurants!3m4!1s0x0:0x24bd6236c7e641ee!8m2!3d37.7570371!4d-122.1819102">Open in Google Maps</a>
+			<div class="menuItem">
+				<div class="menuItemName">
+					Fool Sanaani
+				</div>
+				<div class="menuItemPrice">
+					$8
+				</div>
+				<div class="menuItemDescription">
+					Mashed fava beans mixed with egg, cooked with vegetables like onion, tomatoes, chili peppers,
+					etc and mix of spices.
+				</div>
+			</div>
+			<div class="menuItem">
+				<div class="menuItemName">
+					Kebda
+				</div>
+				<div class="menuItemPrice">
+					$9
+				</div>
+				<div class="menuItemDescription">
+					Kebda, or liver, is a popular breakfast food in Yemen. it's cooked with ingredients like onion,
+					bell pepper and tomatoes.
+				</div>
+			</div>
+			<div class="menuItem">
+				<div class="menuItemName">
+					Bint Al-Sahn
+				</div>
+				<div class="menuItemPrice">
+					$4
+				</div>
+				<div class="menuItemDescription">
+					It's a Yemeni sweet dish made from a dough, white flour, eggs, yeast and clarified butter. It is
+					baked in multiple layers in an oven, which is served with honey on top and sprinkled with
+					Nigella sativa.
+				</div>
 			</div>
 		</div>
-		<div class="subfooter">
-			<p>2019 ©</p>
+		<div class="menuSection" data-menu="mainCourse">
+			<h2 class="menuSectionTitle">Main Course</h2>
+			<div class="menuItem">
+				<div class="menuItemName">
+					Mandi (Chicken/Lamb)
+				</div>
+				<div class="menuItemPrice">
+					$14
+				</div>
+				<div class="menuItemDescription">
+					Mandi consists meat and rice with a special blend of Baharat/spices. The meat is cooked in the
+					tannur which is a special kind of oven which is usually a pit dug up in the ground and covered
+					with clay all around its sides.
+				</div>
+			</div>
+			<div class="menuItem">
+				<div class="menuItemName">
+					Haneeth Lamb
+				</div>
+				<div class="menuItemPrice">
+					$18
+				</div>
+				<div class="menuItemDescription">
+					Haneeth is made from rice, meat (lamb),and a mixture of spices. It is considered as the main
+					dish served at special events.
+				</div>
+			</div>
+			<div class="menuItem">
+				<div class="menuItemName">
+					Sal'tah
+				</div>
+				<div class="menuItemPrice">
+					$12
+				</div>
+				<div class="menuItemDescription">
+					The base is a brown meat stew called maraq, a dollop of fenugreek froth (holba), and sahawiq.
+					Rice, potatoes, scrambled eggs, and vegetables are common additions to saltah. Meats used in the
+					preparation of this dish are typically lamb or chicken.
+				</div>
+			</div>
+			<div class="menuItem">
+				<div class="menuItemName">
+					Ogdah
+				</div>
+				<div class="menuItemPrice">
+					$30
+				</div>
+				<div class="menuItemDescription">
+					Ogdah, meaning "knot", is a stew made from tying and mixing all the ingredients together. It can
+					be made with small pieces of lamb, chicken, or fish that is mixed and cooked together with
+					vegetables, including carrots, potatoes, onions, etc.
+				</div>
+			</div>
 		</div>
+		<div class="menuSection" data-menu="coldDrinks">
+			<h2 class="menuSectionTitle">Cold Drinks</h2>
+			<div class="menuItem">
+				<div class="menuItemName">
+					Mineral Water
+				</div>
+				<div class="menuItemPrice">
+					$1
+				</div>
+			</div>
+			<div class="menuItem">
+				<div class="menuItemName">
+					Soft Drink (Pepsi, 7UP, etc.)
+				</div>
+				<div class="menuItemPrice">
+					$3
+				</div>
+			</div>
+			<div class="menuItem">
+				<div class="menuItemName">
+					Orange Juice
+				</div>
+				<div class="menuItemPrice">
+					$5
+				</div>
+			</div>
 
+			<div class="menuItem">
+				<div class="menuItemName">
+					Lemon Juice
+				</div>
+				<div class="menuItemPrice">
+					$7
+				</div>
+			</div>
+		</div>
+		<div class="menuSection" data-menu="hotDrinks">
+			<h2 class="menuSectionTitle">Hot Drinks</h2>
+			<div class="menuItem">
+				<div class="menuItemName">
+					Red Tea
+				</div>
+				<div class="menuItemPrice">
+					$3
+				</div>
+			</div>
+			<div class="menuItem">
+				<div class="menuItemName">
+					Adani Tea
+				</div>
+				<div class="menuItemPrice">
+					$3
+				</div>
+			</div>
+			<div class="menuItem">
+				<div class="menuItemName">
+					Black Coffee
+				</div>
+				<div class="menuItemPrice">
+					$2
+				</div>
+			</div>
+			<div class="menuItem">
+				<div class="menuItemName">
+					Mocha
+				</div>
+				<div class="menuItemPrice">
+					$5
+				</div>
+			</div>
+		</div>
+		<div class="menuSection" data-menu="deserts">
+			<h2 class="menuSectionTitle">Deserts</h2>
+			<div class="menuItem">
+				<div class="menuItemName">
+					Ma'soub
+				</div>
+				<div class="menuItemPrice">
+					$6
+				</div>
+			</div>
+			<div class="menuItem">
+				<div class="menuItemName">
+					Areeka
+				</div>
+				<div class="menuItemPrice">
+					$6
+				</div>
+			</div>
+			<div class="menuItem">
+				<div class="menuItemName">
+					Chocolate Cake
+				</div>
+				<div class="menuItemPrice">
+					$7
+				</div>
+			</div>
+			<div class="menuItem">
+				<div class="menuItemName">
+					Basbousa
+				</div>
+				<div class="menuItemPrice">
+					$9
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+	<footer class="footer" id="contact">
+		<div class="contact">
+			<h3>Contact</h3>
+			<p>(212) 444 313 959</p>
+			<p>alwadi@company.com</p>
+			<div class="icons-social">
+				<a target="_blank" href="https://github.com/mohdhussein/alwadi" rel="noopener noreferrer">
+					<i class="fab fa-github"></i>
+				</a>
+				<a target="_blank" href="https://twitter.com/_mohdhussein" rel="noopener noreferrer">
+					<i class="fab fa-twitter"></i>
+				</a>
+				<a target="_blank" href="https://www.instagram.com/" rel="noopener noreferrer">
+					<i class="fab fa-instagram"></i>
+				</a>
+			</div>
+		</div>
+		<div class="hours">
+			<h3>Opening Hours</h3>
+			<p>Sun - Thur: 10 AM - 10 PM</p>
+			<p>Fri & Sat: 10 AM - 12 PM</p>
+			<p>Closed in Holidays.</p>
+		</div>
+		<div class="location">
+			<h3>Location</h3>
+			<p>7912 International Blvd</p>
+			<p>Oakland, CA</p>
+			<a target="_blank" href="#" rel="noopener noreferrer">Open in Google Maps
+			</a>
+		</div>
 	</footer>
+	<div class="subfooter">
+		<p>2020 ©</p>
+	</div>
 
-
-
-
-	<script src="menu.js"></script> 
-
+	<script src="js/menu.js"></script>
 </body>
 </html>

@@ -2,107 +2,81 @@
 <html lang="en">
 
   <head>
-    <meta charset="UTF-8">
     <title>Al Wadi Resturant | Home</title>
-    <link rel="stylesheet" type="text/css" href="style.css">
+    <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width,initial-scale=1.0">
-    <link href="https://fonts.googleapis.com/css?family=Cairo|Merriweather+Sans" rel="stylesheet">
-    <link href="https://use.fontawesome.com/releases/v5.0.8/css/all.css" rel="stylesheet">
-    <link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
-    <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
-    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
-
+    <link rel="stylesheet" href="css/style.css" type="text/css" >
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Cairo|Merriweather+Sans" >
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.8/css/all.css" >
   </head>
 
   <body>
-    <header class="header">
-      <span class="openSlide">
-        <a href="javascript:void(0);" onclick="openSlideMenu()">
-          <svg width="30" height="30">
-            <path d="M0,5 30,5" stroke="#FFF" stroke-width="5"/>
-            <path d="M0,14 30,14" stroke="#FFF" stroke-width="5"/>
-            <path d="M0,23 30,23" stroke="#FFF" stroke-width="5"/>
-          </svg>
-        </a>
-      </span>
-      <div id="sideMenu" class="sideNav">
-        <a href="#" class="btnClose" onclick="closeSlideMenu()">&times;</a>
-        <a href="index.html">Home</a>
-        <a href="menu.html">Menu</a>
-        <a href="catering.html">Catering</a>
-        <a onclick="smoothScroll(document.getElementById('reservation'))">Reservations</a>
-        <a onclick="smoothScroll(document.getElementById('contactUs'))">Contact</a>
-      </div>
-      <h2 class="logo">
-        <a href="index.html">Al Wadi</a>
-      </h2>
-      <nav class="nav">
-        <ul>
-          <li>
-            <a href="menu.html">Menu</a>
-          </li>
-          <li>
-            <a href="catering.html">Catering</a>
-          </li>
-          <li>
-            <a href="#reservation">Reservations</a>
-          </li>
-          <li>
-            <a href="#contactUs">Contact</a>
-          </li>
-        </ul>
-      </nav>
-      <div class="lang">
-        <a href="ar/index.html">العربية</a>
-      </div>
-    </header>
-    <div class="body">
-      <div class="welcome">
-        <h1>Al Wadi Resturant</h1>
-        <p>Delicious & Authentic Yemeni dishes</p>
-      </div>
-      <div class="ourStory" id="aboutUs">
-        <div class="p1">
-          <div>
-            <h1>About us</h1>
-            <p>
-              Al Wadi 'The Valley' is a restaurant that serves Yemeni dishes and it is based in San Francisco. In 2009, we opened our doors at a very small storefront with a very big idea. It was a success from the start but quickly became something even bigger.
-            </p>
-          </div>
+    <section class="landingPage">
+      <div class="overlay"></div>
+      <header class="navBar">
+        <span class="openSlide">
+          <a href="javascript:void(0);" onclick="openSlideMenu()">
+            <i class="fas fa-bars menuIcon"></i>
+          </a>
+        </span>
+        <div class="logo">
+          <a href="#">Al Wadi</a>
         </div>
+        <nav class="navLinks">
+          <a href="menu.html">Menu</a>
+          <a href="catering.html">Catering</a>
+          <a href="#reservation">Reservations</a>
+          <a href="#contact">Contact</a>
+        </nav>
+        <div class="lang">
+          <a href="ar/index.html">العربية</a>
+          </div>
+        <div id="sideMenu" class="sideNav">
+          <a href="javascript:void(0)" class="btnClose" onclick="closeSlideMenu()">&times;</a>
+          <a href="#">Home</a>
+          <a href="menu.html">Menu</a>
+          <a href="catering.html">Catering</a>
+          <a href="#reservation">Reservations</a>
+          <a href="#contact">Contact</a>
+        </div>
+      </header>
+      <div class="welcomeText">
+        <h1><span>Al Wadi</span> Resturant</h1>
+        <p>The Most Delicious & Authentic Yemeni dishes</p>
+      </div>
+    </section>
+      <section class="about">
+            <h3 class="title">About</h3>
+            <p>Al Wadi 'The Valley' is a restaurant that serves Yemeni dishes and it is based in San Francisco. In 2009, we opened our doors at a very small storefront with a very big idea. It was a success from the start but quickly became something even bigger.
+            </p>
+            <hr>
         <div class="features">
-          <div>
+          <div class="featHolder">
             <img src="images/dish.png">
             <p>Cooking traditional food is a very special art and for our Yemeni dishes, we use very ­special spices, some that ­cannot be found outside ­Yemen.</p>
           </div>
-          <div>
+          <div class="featHolder">
             <img src="images/coffeecup.png">
             <p>Yemen is one of the top countries in coffee production and has one of the best coffees in the world. We think it's the best, judge for yourself.</p>
           </div>
-          <div>
+          <div class="featHolder">
             <img src="images/karaoke.png" style="margin-top: 4px;">
             <p>Enjoy the classic yemeni music while you're with us. And catch one of the live shows by talented yemeni singers every weekend at 8pm.</p>
           </div>
         </div>
-      </div>
+      </section>
 
-    </div>
     <section class="reservation" id="reservation">
-      <div class="resHeader">
-        <h1>Reservation</h1>
-      </div>
-
+        <h3 class="title">Reservation</h3>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. In dicta, cupiditate odit quis, quaerat porro earum eveniet est tenetur reprehenderit error vero, aliquam commodi nobis temporibus assumenda sapiente corrupti repellat.</p>
+        <hr>
       <div class="resContent">
         <form class="form1">
-          <input id="field1" type="text" name="name" class="name" placeholder="Enter your name" onkeyup="onlyLetters(this)" required="required">
-          <input id="field2" type="email" name="email" class="email" placeholder="Enter your email" onkeyup="formEmail(this)" required="required">
-          <script>
-            $(function () {
-              $("input.datePicker").datepicker({minDate: 0});
-            });
-          </script>
+          <input id="field1" type="text" name="name" class="name" placeholder="Enter your name" required="required">
+          <input id="field2" type="email" name="email" class="email" placeholder="Enter your email" required="required">
 
-          <input type="text" class="datePicker" placeholder="Select date" required="required">
+
+          <input type="date" class="datePicker" required="required" min="" value="">
 
           <select class="selectTime" required="required">
             <option value="400">4:00 PM</option>
@@ -129,63 +103,69 @@
 
           </select>
 
-          <button class="bookButton" value="Book" type="submit" onclick="reservationAlert()">Book Now</button>
-        </div>
-      </form>
-    </section>
-    <section class="instagram">
-      <h1>Instagram</h1>
-
-      <div class="imgGallery">
-        <div><img src="images/coffeebeans.jpg" alt="gallery image"></div>
-        <div><img src="images/bintalsahn.jpg" alt="gallery image"></div>
-        <div><img src="images/saltah.jpg" alt="gallery image"></div>
-        <div><img src="images/mandi.png" alt="gallery image"></div>
-        <div><img src="images/kebda.JPG" alt="gallery image"></div>
-
+          <button class="bookButton" value="Book" type="submit" onclick="">Book Now</button>
+        </form>
       </div>
     </section>
-  </div>
-  <footer>
-    <div class="footer" id="contactUs">
-      <div class="contact">
-        <h3>Contact</h3>
-        <p>(212) 444 313 959</p>
-        <p>hi@mohdhussein.net</p>
-
-        <div class="icons-social">
-          <a target="_blank" href="https://github.com/mohdhussein/alwadi">
-            <i class="fab fa-github"></i>
-          </a>
-          <a target="_blank" href="https://twitter.com/ItssMohammed">
-            <i class="fab fa-twitter"></i>
-          </a>
-          <a target="_blank" href="https://www.instagram.com/">
-            <i class="fab fa-instagram"></i>
-          </a>
-        </div>
-
-      </div>
-      <div class="hours">
-        <h3>Opening Hours</h3>
-        <p>Sun - Thur: 10 AM - 10 PM</p>
-        <p>Fri & Sat: 10 AM - 12 PM</p>
-        <p>Closed in Holidays.</p>
-      </div>
-      <div class="location">
-        <h3>Location</h3>
-        <p>7912 International Blvd</p>
-        <p>Oakland, CA</p>
-        <a target="_blank" href="https://www.google.com.my/maps/place/Masala+Cuisine/@37.7573274,-122.1853263,17z/data=!4m8!1m2!2m1!1sRestaurants!3m4!1s0x0:0x24bd6236c7e641ee!8m2!3d37.7570371!4d-122.1819102">Open in Google Maps</a>
-
+    <section class="gallery">
+      <h3 class="title">Gallery</h3>
+      <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Tempore ipsam culpa tenetur sequi nulla! Numquam consequuntur animi explicabo, alias recusandae ipsum perspiciatis labore.</p>
+      <hr>
+  
+      <ul class="grid">
+        <li class="small" style="background-image: url(images/6.jpg);"></li>
+        <li class="large" style="background-image: url(images/7.jpg);"></li>
+        <li class="large" style="background-image: url(images/8.jpg);"></li>
+        <li class="small" style="background-image: url(images/9.jpg);"></li>
+      </ul>
+    </section>
+    <section class="testimonials">
+      <h3 class="title">Testimonials</h3>
+      <hr>
+      <p class="quote">Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur rem mollitia, harum saepe magnam distinctio voluptatum quas et.</p>
+      <p class="author">- Selina Kyle</p>
+      <p class="quote">Minus, exercitationem impedit delectus facilis cum mollitia, aliquam aperiam deleniti unde pariatur esse ab. Iure dicta accusamus.</p>
+      <p class="author">- Nélson Semedo</p>
+      <p class="quote">Tempore velit ducimus amet quidem!
+      Magni repellat mollitia autem eum corporis suscipit nam accusantium quasi nobis laborum consequatur modi neque veniam optio illo!</p>
+      <p class="author">- Tobias Fünke</p>
+    </section>
+  <footer class="footer" id="contact">
+    <div class="contact">
+      <h3>Contact</h3>
+      <p>(212) 444 313 959</p>
+      <p>alwadi@company.com</p>
+      <div class="icons-social">
+        <a target="_blank" href="https://github.com/mohdhussein/alwadi" rel="noopener noreferrer">
+          <i class="fab fa-github"></i>
+        </a>
+        <a target="_blank" href="https://twitter.com/_mohdhussein" rel="noopener noreferrer">
+          <i class="fab fa-twitter"></i>
+        </a>
+        <a target="_blank" href="https://www.instagram.com/" rel="noopener noreferrer">
+          <i class="fab fa-instagram"></i>
+        </a>
       </div>
     </div>
-    <div class="subfooter">
-      <p>2019 ©</p>
+    <div class="hours">
+      <h3>Opening Hours</h3>
+      <p>Sun - Thur: 10 AM - 10 PM</p>
+      <p>Fri & Sat: 10 AM - 12 PM</p>
+      <p>Closed in Holidays.</p>
+    </div>
+    <div class="location">
+      <h3>Location</h3>
+      <p>7912 International Blvd</p>
+      <p>Oakland, CA</p>
+      <a target="_blank" href="#" rel="noopener noreferrer">Open in Google Maps
+      </a>
     </div>
   </footer>
+  <div class="subfooter">
+    <p>2020 ©</p>
+  </div>
 
-  <script src="script.js"></script>
+  <script src="js/script.js"></script>
 
 </body>
 

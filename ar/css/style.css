@@ -1,0 +1,488 @@
+:root {
+	--main-color: rgb(163, 162, 162); 
+}
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+html {
+	scroll-behavior: smooth;
+}
+body {
+	font-family: 'Cairo', sans-serif;
+	font-family: 'Merriweather Sans', sans-serif;
+	overflow-x: hidden;
+}
+
+section:not(.landingPage) {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	padding: 100px 80px;
+}
+h3.title {
+	text-transform: capitalize;
+	font-size: 32px;
+	margin-bottom: 30px;
+	text-align: center;
+}
+hr {
+	width: 250px;
+	height: 3px;
+	background-color: #111;
+	border: 0;
+	margin-bottom: 50px;
+}
+
+
+/* Start of landing page, overlay, header, slide menu and welcome text*/
+.landingPage {
+	min-height: 100vh;
+	background-image: url(../../images/1.jpg);
+	background-size: cover;
+	position: relative;
+	transition: all 0.5s;
+	background-repeat: no-repeat;
+	background-position: bottom;
+}
+.landingPage .overlay {
+	background-color:rgba(0, 0, 0, .6);
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	left: 0;
+	top: 0;
+	z-index: 1;
+}
+.navBar {
+	position: relative;
+	z-index: 3;
+	display: grid;
+	grid-template-columns: 1fr 2fr 1fr;
+	grid-template-areas: "lang nav logo";
+	height: 63px;
+	width: 100%;
+	font-size: 20px;
+	position: absolute;
+	top: 0;
+	transition: all 0.35s linear;
+	animation: 1s fadein 0.5s forwards;
+	opacity: 0;
+}
+@keyframes fadein {
+	100% {
+		opacity: 1;
+	}
+}
+
+.navBar a {
+	color: #FFF;
+}
+.logo {
+	grid-area: logo;
+	align-self: center;
+	justify-self: end;
+	margin-right: 6px;
+}
+.logo a {
+	text-decoration: none;
+	font-size: 24px;
+	font-weight: 500;
+}
+.logo a:hover {
+	color: var(--main-color);
+}
+.navLinks {
+	width: 100%;
+	justify-self: center;
+	grid-area: nav;
+	align-self: center;
+	justify-content: center;
+	display: flex;
+	text-align: center;
+	column-gap: 30px;
+}
+.navLinks a {
+	text-decoration: none;
+	cursor: pointer;
+	font-size: 18px;
+}
+.navLinks a:hover {
+	color: var(--main-color);
+}
+
+.lang {
+	grid-area: lang;
+	align-self: center;
+	justify-self: start;
+	margin: 0;
+	text-align: left;
+	padding-left: 6px;
+}
+.lang a {
+	text-decoration: none;
+	color: #FFF;
+}
+
+.lang a:hover {
+
+	color: var(--main-color);
+}
+
+/* Start of Slide Menu */
+
+.openSlide {
+	display: grid;
+	justify-content: right;
+}
+.openSlide a {
+	align-self: center;
+	margin-right: 6px;
+}
+.openSlide .menuIcon {
+	color: #FFF;
+	font-size: 25px;
+	transition: .8s;
+	align-self: center;
+	justify-self: center;
+}
+.openSlide .menuIcon:hover {
+	color: var(--main-color);
+	transition: .8s;
+}
+.sideNav {
+	height: 100%;
+	width: 0;
+	position: fixed;
+	z-index: 1;
+	top: 0;
+	right: 0;
+	background-color: #111;
+	opacity: 0.9;
+	overflow-x: hidden;
+	padding-top: 60px;
+	transition: 0.5s;
+
+}
+.sideNav a {
+	padding: 10px 30px 10px 10px;
+	text-decoration: none;
+	font-size: 22px;
+	color: #FFF;
+	display: block;
+	transition: 0.3s;
+	text-align: right;
+
+}
+.sideNav a:hover {
+	color: var(--main-color);
+}
+.sideNav .btnClose {
+	position: absolute;
+	top: 0;
+	right: 22px;
+	font-size: 36px;
+	margin-right: 50px;
+	padding-right: 115px;
+
+}
+
+/* welcome text */
+.welcomeText {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	z-index: 2;
+	color: #FFF;
+	text-align: center;
+	opacity: 0;
+	margin-top: 100px;
+	animation: 1s slidefade 1s forwards;
+}
+
+@keyframes slidefade {
+100% {
+	opacity: 1;
+	margin: 0;
+}
+}
+.welcomeText h1 {
+	font-size: 38px;
+	margin: 0 0 12px;
+}
+.welcomeText h1 span {
+	color: var(--main-color);
+}
+.welcomeText p {
+	font-size: 20px;
+	margin: 0;
+	line-height: 1.6;
+
+}
+
+/* about section */
+.about p {
+	max-width: 775px;
+	line-height: 2;
+	padding: 0 20px;
+	margin-bottom: 30px;
+	text-align: center;
+}
+
+/* about us icons */
+.features {
+	display: grid;
+	width: 100%;
+	grid-template-columns: repeat(3, 1fr);
+	direction: rtl;
+
+}
+
+.features .featHolder {
+	display: grid;
+	text-align: center;
+	justify-content: center;
+	justify-items: center;
+	text-align: center;
+	row-gap: 30px;
+
+}
+
+/* Reservation Section */
+.reservation {
+	background-color: rgb(236, 236, 236);
+	text-align: center;
+	scroll-margin-top: 63px;
+}
+.reservation p {
+	max-width: 775px;
+	line-height: 2;
+	padding: 0 20px;
+	margin-bottom: 30px;
+	text-align: center;
+}
+
+
+/* form container div */
+.resContent {
+	margin-top: 50px;
+
+}
+.form1 {
+	display: grid;
+	justify-self: center;
+	justify-items: center;
+	align-self: center;
+	grid-template-rows: repeat(6, 1fr);
+	grid-gap: 10px;
+	margin-bottom: 50px;
+}
+
+.name, .email, .datePicker {
+	border: 0;
+	padding: 0;
+	font-size: 14px;
+	height: 29px;
+	width: 268px;
+	background-color: #FFFAFA;
+	box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+
+}
+.selectPerson, .selectTime {
+	border: 0;
+	padding: 0;
+	font-size: 14px;
+	height: 29px;
+	width: 268px;
+	background-color: #FFFAFA;
+	box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+
+
+}
+
+.bookButton {
+	border: none;
+	font-size: 14px;
+	height: 35px;
+	width: 268px;
+	margin-bottom: 10px;
+	color: black;
+	background-color: #FFFAFA;
+	box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+}
+
+
+/*Gallery Section*/
+
+.gallery p {
+	max-width: 775px;
+	line-height: 2;
+	padding: 0 20px;
+	margin-bottom: 30px;
+	text-align: center;
+}
+.gallery .grid {
+	width: 100%;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	list-style: none;
+
+}
+.gallery .grid li {
+	height: 350px;
+	padding: 20px;
+	background-clip: content-box;
+	background-size: cover;
+	background-position: center;
+}
+.gallery .grid li.small {
+	flex-basis: 30%;
+}
+.gallery .grid li.large {
+	flex-basis: 70%;
+}
+
+/*Testimonials Section*/
+.testimonials {
+	background-color: rgb(236, 236, 236);
+	text-align: center;
+}
+.testimonials .quote {
+	font-size: 22px;
+	font-weight: 300;
+	line-height: 1.5;
+	margin: 40px 0 25px;
+}
+.testimonials p {
+	max-width: 775px;
+	line-height: 2;
+	padding: 0 20px;
+	margin-bottom: 30px;
+	text-align: center;
+}
+/* Footer section */
+.footer {
+	width: 100%;
+	background-color: black;
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr;
+	grid-template-areas: "contact hours location";
+	grid-gap: 0;
+}
+.footer h3 {
+	color: #FFFAFA;
+}
+.footer p {
+	color: var(--main-color);
+}
+.footer a {
+	color: var(--main-color);
+	text-decoration: none;
+}
+.footer a:hover {
+	color: grey;
+}
+.contact, .hours, .location {
+	display: grid;
+	justify-items: center;
+	align-items: center;
+	text-align: center;
+	width: 100%;
+	padding: 20px;
+	grid-template-rows: repeat(4, 1fr);
+}
+.contact {
+	grid-area: contact;
+}
+.icons-social a {
+	color: var(--main-color);
+	font-size: 25px;
+}
+.icons-social a:hover {
+	color: grey;
+}
+.hours {
+	grid-area: hours;
+}
+.location {
+	grid-area: location;
+}
+.subfooter {
+	background-color: #050505;
+	width: 100%;
+	text-align: center;
+	height: 30px;
+}
+.subfooter p {
+	margin: 0;	
+	align-self: center;
+	justify-self: center;
+	color: #FFFAFA;
+}
+
+
+@media (max-width: 1100px) {
+.gallery .grid li.small, .gallery .grid li.large {
+	flex-basis: 50%;
+}
+}
+	
+@media (max-width: 800px) {
+section:not(.landingPage) {
+	padding: 50px 20px;
+}
+.gallery .grid li.small, .gallery .grid li.large {
+	flex-basis: 100%;
+}
+	
+.testimonials .quote {
+	font-size: 18px;
+	margin: 15px 0;
+}	
+.testimonials .author {
+	font-size: 14px;
+}
+}
+
+/* Media Queries */
+@media(max-width: 769px){
+	
+.navLinks {
+	display: none;
+}
+.logo {
+	grid-area: nav;
+	justify-self: center;
+}
+.features {	
+	grid-template-columns: 1fr;
+
+}
+.footer {
+	grid-template-rows: repeat(3, 1fr);
+	grid-template-columns: 1fr;
+	grid-template-areas: "contact1" "hours1" "location1";
+}
+.contact {
+	grid-area: contact1;
+}
+.hours {
+	grid-area: hours1;
+}
+.location {
+	grid-area: location1;
+}
+}
+
+
+@media (min-width: 769px){
+.openSlide {
+	display: none;
+}
+}
+
+

@@ -1,280 +1,276 @@
 <!DOCTYPE html>
 <html lang="ar">
-<head>
-	<meta charset="UTF-8">
-	<title>مطعم الوادي | القائمة</title>
-	<link rel="stylesheet" type="text/css" href="menu.css">
-	<meta name="viewport" content="width=device-width,initial-scale=1.0">
-	<link href="https://use.fontawesome.com/releases/v5.0.8/css/all.css" rel="stylesheet">
-	<link href="https://fonts.googleapis.com/css?family=Cairo|Merriweather+Sans" rel="stylesheet"> 
-</head>
-<body>
-		
-		<header class="header">
-  <span class="openSlide">
-   <a href="javascript:void(0);" onclick="openSlideMenu()">
-    <svg width="30" height="30">
-     <path d="M0,5 30,5" stroke="#FFFAF0" stroke-width="5"/>
-     <path d="M0,14 30,14" stroke="#FFFAF0" stroke-width="5"/>
-     <path d="M0,23 30,23" stroke="#FFFAF0" stroke-width="5"/>
-    </svg>
-   </a>
-  </span>
-  <div id="sideMenu" class="sideNav">
-   <a href="#" class="btnClose" onclick="closeSlideMenu()">&times;</a>
-   <a href="index.html">الرئيسية</a>
-   <a href="menu.html">القائمة </a>
-   <a href="catering.html">الخدمات</a>
-   <a href="index.html#reservation">الحجوزات</a>
-   <a href="#contactUs">اتصل بنا</a>
-  </div>
-  <h2 class="logo"><a href="index.html">الوادي</a></h2>
-  <nav class="nav">
-   <ul>
-    <li><a href="#contactUs">اتصل بنا</a></li>
-    <li><a href="catering.html">الخدمات</a></li>
-    <li><a href="index.html#reservation">الحجوزات</a></li>
-    <li><a href="menu.html">القائمة</a></li>
 
-   </ul>
-  </nav>
-  <div class="lang">
-   <a href="../index.html">English</a>
-  </div>
- </header>
-	<div class="body">
-		<div class="menuHeader">
-			<h1>قائمة الطعام</h1>
-		</div>	
-		<div class="selectSection">
-			<div class="selectHolder">
-				<a id="dLink">الحلى</a>
-				<a id="hdLink">المشروبات الساخنة</a>
-				<a id="cdLink">المشروبات الباردة</a>
-				<a id= "mcLink">الوجبات الرئيسية</a>
-				<a id="bfLink" class="active">الإفطار</a>
+<head>
+	<title>مطعم الوادي | القائمة</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width,initial-scale=1.0">
+	<link rel="stylesheet" href="css/menu.css" type="text/css">
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Cairo|Merriweather+Sans">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.8/css/all.css">
+</head>
+
+<body>
+	<section class="landingPage">
+		<div class="overlay"></div>
+		<header class="navBar">
+			<span class="openSlide">
+				<a href="javascript:void(0);" onclick="openSlideMenu()">
+					<i class="fas fa-bars menuIcon"></i>
+				</a>
+			</span>
+			<div class="logo">
+				<a href="index.html">الوادي</a>
 			</div>
+			<nav class="navLinks">
+				<a href="#contact">اتصل بنا</a>
+				<a href="index.html#reservation">الحجوزات</a>
+				<a href="catering.html">الخدمات</a>
+				<a href="#">القائمة</a>
+			</nav>
+			<div class="lang">
+				<a href="../menu.html">English</a>
+			</div>
+			<div id="sideMenu" class="sideNav">
+				<a href="javascript:void(0)" class="btnClose" onclick="closeSlideMenu()">&times;</a>
+				<a href="index.html">الرئيسية</a>
+				<a href="#">القائمة</a>
+				<a href="catering.html">الخدمات</a>
+				<a href="index.html#reservation">الحجوزات</a>
+				<a href="#contact">اتصل بنا</a>
+			</div>
+		</header>
+		<div class="welcomeText">
+			<h1>قائمة <span>الطعام</span></h1>
+		</div>
+	</section>
+
+	<section class="container">
+		<div class="selectSection">
+				<button type="button" data-menu="breakfast" class="active">الإفطار</button>
+				<button type="button" data-menu="mainCourse">الوجبات الرئيسية</button>
+				<button type="button" data-menu="coldDrinks">المشروبات الباردة</button>
+				<button type="button" data-menu="hotDrinks">المشروبات الساخنة</button>
+				<button type="button" data-menu="deserts">الحلى</button>
 		</div>
 		<div class="menuBody">
-		   <div class="menuSection" id="breakfast">
-		      <h2 class="menuSectionTitle">الإفطار</h2>
-		      <div class="menuItem">
-		         <div class="menuItemName">
-		            شكشوكة
-		         </div>
-		         <div class="menuItemPrice">
-		            $7
-		         </div>
-		      </div>
-		      <div class="menuItem">
-		         <div class="menuItemName">
-		            فول صنعاني
-		         </div>
-		         <div class="menuItemPrice">
-		            $8
-		         </div>
-		      </div>
-		      <div class="menuItem">
-		         <div class="menuItemName">
-		            كبدة
-		         </div>
-		         <div class="menuItemPrice">
-		            $9
-		         </div>
-		      </div>
-		      <div class="menuItem">
-		         <div class="menuItemName">
-		            بنت الصحن/سبايا
-		         </div>
-		         <div class="menuItemPrice">
-		            $4
-		         </div>
-		      </div>
-		   </div>
-		   <div class="menuSection" id="mainCourse">
-		      <h2 class="menuSectionTitle">الوجبات الرئيسية</h2>
-		      <div class="menuItem">
-		         <div class="menuItemName">
-		            مندي لحم/دجاج
-		         </div>
-		         <div class="menuItemPrice">
-		            $14
-		         </div>
-		      </div>
-		      <div class="menuItem">
-		         <div class="menuItemName">
-		            حنيذ لحم 
-		         </div>
-		         <div class="menuItemPrice">
-		            $18
-		         </div>
-		      </div>
-		      <div class="menuItem">
-		         <div class="menuItemName">
-		            سلتة
-		         </div>
-		         <div class="menuItemPrice">
-		            $12
-		         </div>
-		      </div>
-		      <div class="menuItem">
-		         <div class="menuItemName">
-		            عقدة لحم/دجاج
-		         </div>
-		         <div class="menuItemPrice">
-		            $30
-		         </div>
-		      </div>
-		   </div>
-		    <div class="menuSection" id="coldDrinks">
-		      <h2 class="menuSectionTitle">المشروبات الباردة</h2>
-		      <div class="menuItem">
-		         <div class="menuItemName">
-		            مياه معدنية
-		         </div>
-		         <div class="menuItemPrice">
-		            $1
-		         </div>
-		      </div>
-		      <div class="menuItem">
-		         <div class="menuItemName">
-		            مشروبات غازية
-		         </div>
-		         <div class="menuItemPrice">
-		            $3
-		         </div>
-		      </div>
-		      <div class="menuItem">
-		         <div class="menuItemName">
-		            عصير برتقال
-		         </div>
-		         <div class="menuItemPrice">
-		            $5
-		         </div>
-		      </div>
-
-		      <div class="menuItem">
-		         <div class="menuItemName">
-		            عصير ليمون
-		         </div>
-		         <div class="menuItemPrice">
-		            $7
-		         </div>
-		      </div>
-		   </div>
-		    <div class="menuSection" id="hotDrinks">
-		      <h2 class="menuSectionTitle">المشروبات الساخنة</h2>
-		      <div class="menuItem">
-		         <div class="menuItemName">
-		            شاي بالنعناع
-		         </div>
-		         <div class="menuItemPrice">
-		            $3
-		         </div>
-		      </div>
-		      <div class="menuItem">
-		         <div class="menuItemName">
-		            شاي عدني
-		         </div>
-		         <div class="menuItemPrice">
-		            $3
-		         </div>
-		      </div>
-		      <div class="menuItem">
-		         <div class="menuItemName">
-		            قهوة سوداء 
-		         </div>
-		         <div class="menuItemPrice">
-		            $2
-		         </div>
-		      </div>
-		      <div class="menuItem">
-		         <div class="menuItemName">
-		            موكا
-		         </div>
-		         <div class="menuItemPrice">
-		            $5
-		         </div>
-		      </div>
-		   </div>
-		   <div class="menuSection" id="deserts">
-		      <h2 class="menuSectionTitle">الحلى</h2>
-		      <div class="menuItem">
-		         <div class="menuItemName">
-		            معصوب
-		         </div>
-		         <div class="menuItemPrice">
-		            $6
-		         </div>
-		      </div>
-		      <div class="menuItem">
-		         <div class="menuItemName">
-		            عريكة
-		         </div>
-		         <div class="menuItemPrice">
-		            $6
-		         </div>
-		      </div>
-		      <div class="menuItem">
-		         <div class="menuItemName">
-		            كيك بالشوكولاتة
-		         </div>
-		         <div class="menuItemPrice">
-		            $7
-		         </div>
-		      </div>
-		      <div class="menuItem">
-		         <div class="menuItemName">
-		            بسبوسة
-		         </div>
-		         <div class="menuItemPrice">
-		            $9
-		         </div>
-		      </div>
-		   </div>
-
-		   
-</div>
-
-	</div>
-<footer> 
-	<div class="footer" id="contactUs">
-			<div class="contact" >
-					<h3>اتصل بنا</h3>
-					<p>(212) 444 313 959</p>
-					<p>hi@mohdhussein.net</p>
-					
-					<div class="icons-social">
-					<a target="_blank" href="https://github.com/mohdhussein/alwadi"><i class="fab fa-github"></i></a>
-					<a target="_blank" href="https://twitter.com/ItssMohammed"><i class="fab fa-twitter"></i></a>
-					<a target="_blank" href="https://www.instagram.com/"><i class="fab fa-instagram"></i></a>
-						</div>
-				
-				 
-				  </div>
-				  <div class="hours">
-					<h3>ساعات العمل</h3>
-					<p>الأحد إلى الخميس: 10-10</p>
-					<p>الجمعة والسبت: 10-12</p>
-					<p>مغلق في الأعياد</p>
-				  </div>   
-				  <div class="location">
-					<h3>الموقع</h3>
-					<p>7912 International Blvd</p>
-					<p>Oakland, CA</p>
-					<a target="_blank" href="https://www.google.com.my/maps/place/Masala+Cuisine/@37.7573274,-122.1853263,17z/data=!4m8!1m2!2m1!1sRestaurants!3m4!1s0x0:0x24bd6236c7e641ee!8m2!3d37.7570371!4d-122.1819102">إفتح في خرائط Google</a>
-				
+			<div class="menuSection" data-menu="breakfast">
+				<h2 class="menuSectionTitle">الإفطار</h2>
+				<div class="menuItem">
+					<div class="menuItemName">
+						شكشوكة
 					</div>
-				  </div>
-		<div class="subfooter">
-			<p>2019 ©</p>
+					<div class="menuItemPrice">
+						$7
+					</div>
+				</div>
+				<div class="menuItem">
+					<div class="menuItemName">
+						فول صنعاني
+					</div>
+					<div class="menuItemPrice">
+						$8
+					</div>
+				</div>
+				<div class="menuItem">
+					<div class="menuItemName">
+						كبدة
+					</div>
+					<div class="menuItemPrice">
+						$9
+					</div>
+				</div>
+				<div class="menuItem">
+					<div class="menuItemName">
+						بنت الصحن/سبايا
+					</div>
+					<div class="menuItemPrice">
+						$4
+					</div>
+				</div>
+			</div>
+			<div class="menuSection" data-menu="mainCourse">
+				<h2 class="menuSectionTitle">الوجبات الرئيسية</h2>
+				<div class="menuItem">
+					<div class="menuItemName">
+						مندي لحم/دجاج
+					</div>
+					<div class="menuItemPrice">
+						$14
+					</div>
+				</div>
+				<div class="menuItem">
+					<div class="menuItemName">
+						حنيذ لحم
+					</div>
+					<div class="menuItemPrice">
+						$18
+					</div>
+				</div>
+				<div class="menuItem">
+					<div class="menuItemName">
+						سلتة
+					</div>
+					<div class="menuItemPrice">
+						$12
+					</div>
+				</div>
+				<div class="menuItem">
+					<div class="menuItemName">
+						عقدة لحم/دجاج
+					</div>
+					<div class="menuItemPrice">
+						$30
+					</div>
+				</div>
+			</div>
+			<div class="menuSection" data-menu="coldDrinks">
+				<h2 class="menuSectionTitle">المشروبات الباردة</h2>
+				<div class="menuItem">
+					<div class="menuItemName">
+						مياه معدنية
+					</div>
+					<div class="menuItemPrice">
+						$1
+					</div>
+				</div>
+				<div class="menuItem">
+					<div class="menuItemName">
+						مشروبات غازية
+					</div>
+					<div class="menuItemPrice">
+						$3
+					</div>
+				</div>
+				<div class="menuItem">
+					<div class="menuItemName">
+						عصير برتقال
+					</div>
+					<div class="menuItemPrice">
+						$5
+					</div>
+				</div>
+	
+				<div class="menuItem">
+					<div class="menuItemName">
+						عصير ليمون
+					</div>
+					<div class="menuItemPrice">
+						$7
+					</div>
+				</div>
+			</div>
+			<div class="menuSection" data-menu="hotDrinks">
+				<h2 class="menuSectionTitle">المشروبات الساخنة</h2>
+				<div class="menuItem">
+					<div class="menuItemName">
+						شاي بالنعناع
+					</div>
+					<div class="menuItemPrice">
+						$3
+					</div>
+				</div>
+				<div class="menuItem">
+					<div class="menuItemName">
+						شاي عدني
+					</div>
+					<div class="menuItemPrice">
+						$3
+					</div>
+				</div>
+				<div class="menuItem">
+					<div class="menuItemName">
+						قهوة سوداء
+					</div>
+					<div class="menuItemPrice">
+						$2
+					</div>
+				</div>
+				<div class="menuItem">
+					<div class="menuItemName">
+						موكا
+					</div>
+					<div class="menuItemPrice">
+						$5
+					</div>
+				</div>
+			</div>
+			<div class="menuSection" data-menu="deserts">
+				<h2 class="menuSectionTitle">الحلى</h2>
+				<div class="menuItem">
+					<div class="menuItemName">
+						معصوب
+					</div>
+					<div class="menuItemPrice">
+						$6
+					</div>
+				</div>
+				<div class="menuItem">
+					<div class="menuItemName">
+						عريكة
+					</div>
+					<div class="menuItemPrice">
+						$6
+					</div>
+				</div>
+				<div class="menuItem">
+					<div class="menuItemName">
+						كيك بالشوكولاتة
+					</div>
+					<div class="menuItemPrice">
+						$7
+					</div>
+				</div>
+				<div class="menuItem">
+					<div class="menuItemName">
+						بسبوسة
+					</div>
+					<div class="menuItemPrice">
+						$9
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+
+	<footer class="footer" id="contact">
+		<div class="contact">
+			<h3>اتصل بنا</h3>
+			<p>(212) 444 313 959</p>
+			<p>alwadi@company.com</p>
+			<div class="icons-social">
+				<a target="_blank" href="https://github.com/mohdhussein/alwadi" rel="noopener noreferrer">
+					<i class="fab fa-github"></i>
+				</a>
+				<a target="_blank" href="https://twitter.com/_mohdhussein" rel="noopener noreferrer">
+					<i class="fab fa-twitter"></i>
+				</a>
+				<a target="_blank" href="https://www.instagram.com/" rel="noopener noreferrer">
+					<i class="fab fa-instagram"></i>
+				</a>
+			</div>
+		</div>
+		<div class="hours">
+			<h3>ساعات العمل</h3>
+			<p>الأحد إلى الخميس: 10-10</p>
+			<p>الجمعة والسبت: 10-12</p>
+			<p>مغلق في الأعياد</p>
+		</div>
+		<div class="location">
+			<h3>الموقع</h3>
+			<p>7912 International Blvd</p>
+			<p>Oakland, CA</p>
+			<a target="_blank" href="#" rel="noopener noreferrer">إفتح في خرائط Google</a>
 		</div>
 	</footer>
+	<div class="subfooter">
+		<p>2020 ©</p>
+	</div>
 
 
-
-
-	<script src="menu.js"></script> 
+	<script src="js/menu.js"></script>
 
 </body>
+
 </html>
