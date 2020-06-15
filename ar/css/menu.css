@@ -257,6 +257,7 @@ body {
 	margin: 35px 0;
 	font-size: 18px;
 	color: black;
+	text-align: right;
 }
 
 .menuItemName {
@@ -273,7 +274,7 @@ body {
 }
 
 .menuItemPrice {
-	float: right;
+	float: left;
 	font-weight: bold;
 	margin-top: -22px;
 	color: black;
