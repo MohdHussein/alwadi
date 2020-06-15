@@ -13,7 +13,8 @@ setInterval(() => {
   // Change background img url
 
 landingPage.style.backgroundImage = 'url("../../images/' + imgsArray[randomNumber] +'")';
-7}, 15000);
+
+}, 15000);
 
 // Slide Menu
 
